@@ -10,15 +10,46 @@ This repository contains the real-time machine learning model inference deployed
 * [Serverless Deployment](#serverless)
 
 ## Model Training
-This project is simple Lorem ipsum dolor generator.
+- Data Generation
+- Feature Extraction
+- Model Training
+- Model Packaging
+
+```
+jupyter notebook ml-traffic-prediction.ipynb
+```
 	
 ## Packaging
+- Dockerfile Creation
+- Uploading the Dockerhub
+
+```
+Refer to Docker Folder
+```
 
 
 ## Local Deployment
+- Image extraction
+- Local Flask deployment
+
+```
+Refer to Local Deployment
+```
 
 
 ## Microservice 
+- Infrastrcture Design
+- Model Deployment Steps
+
+```
+Refer to Microservice Deployment
+```
 
 
 ## Serverless 
+- Infrastrcture Design
+- Model Deployment Steps
+
+```
+Refer to Serverless Deployment
+```
