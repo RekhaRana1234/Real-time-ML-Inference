@@ -21,7 +21,7 @@ jupyter notebook ml-traffic-prediction.ipynb
 	
 ## Packaging
 - Dockerfile Creation
-- Uploading the Dockerhub
+- Uploading image to Dockerhub
 
 ```
 Refer to Docker Folder
