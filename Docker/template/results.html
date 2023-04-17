@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display results</title>
+    <style>
+
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+h3 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-size: 22px;
+	line-height: 40px;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: 'Courier New', cursive;
+	letter-spacing: 1px;
+	font-style: italic;
+	text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.center {
+margin-left: 20%;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  margin-left: 20%;
+  content: "";
+  display: table;
+  text-align: center;
+}
+
+.tab
+{
+    text-align: center;
+    
+}
+.showTable{
+overflow: auto;
+text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+<h1> LSTM MODEL RESULTS </h1>
+<br>
+
+
+  <div class="center">
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2><center>Input Values entered are :</center></h2>
+        {% for table in tables %}
+        <div class="showTable"><center>{{ table|safe }}</center></div>
+    {% endfor %}
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2><center>Future Forecast Value is: </center> </h2>
+        <div class="showTable"><center>{{ result }}</center></div>
+      </div>
+    </div>
+
+
+</div>
+</body>
+</html>
+
+
+

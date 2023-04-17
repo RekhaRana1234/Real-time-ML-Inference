@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Traffic Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+
+input[type=text], .custom-select {
+  width:80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+form, table{
+width:80%;
+}
+
+input[type=submit] {
+  background-color: #ffffcc;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 230px;
+  margin-right: 400px;
+
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+
+
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #9999ff;
+  padding: 20px;
+  display: flex;
+}
+
+.form_wrapper {
+  flex:1;
+  text-align: center;
+}
+label{
+color:white;
+margin-left: 30px;
+}
+
+.col-label{
+width:55%;
+}
+
+
+
+</style>
+</head>
+<body>
+<h1> Traffic Forecast </h1>
+<div class="container">
+  <form action="/send", name="send_data", method="post">
+      <table>
+
+
+
+
+<tr>
+    <td  class="col-label">  <label>Data Value 1</label></td>
+       <td  class="col-input">  <input type="text" name="value1" placeholder="Value 1"></td></tr>
+
+<tr>
+    <td  class="col-label">  <label>Data Value 2</label></td>
+       <td  class="col-input">  <input type="text" name="value2" placeholder="Value 2"></td></tr>
+
+<tr>
+    <td  class="col-label">  <label>Data Value 3</label></td>
+       <td  class="col-input">  <input type="text" name="value3" placeholder="Value 3"></td></tr>
+
+<tr>
+        <td  class="col-label">  <label>Data Value 4</label></td>
+           <td  class="col-input">  <input type="text" name="value4" placeholder="Value 4"></td></tr>
+
+    <tr class="form_wrapper">
+     <td colspan='2'> <input type="submit" value="PREDICT Traffic "/></td>
+    </tr>
+</table>
+  </form>
+
+
+</div>
+</body>
+</html>
