@@ -6,8 +6,7 @@ This repository contains the real-time machine learning model inference deployed
 * [Model Training](#model-training)
 * [Model Packaging as an Docker Image](#packaging)
 * [Local deployment and Testing](#local-deployment)
-* [Microservice Deployment](#microservice)
-* [Serverless Deployment](#serverless)
+
 
 ## Model Training
 - Data Generation
@@ -34,22 +33,4 @@ Refer to Docker Folder
 
 ```
 Refer to Local Deployment
-```
-
-
-## Microservice 
-- Infrastrcture Design
-- Model Deployment Steps
-
-```
-Refer to Microservice Deployment
-```
-
-
-## Serverless 
-- Infrastrcture Design
-- Model Deployment Steps
-
-```
-Refer to Serverless Deployment
 ```
